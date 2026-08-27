@@ -44,25 +44,11 @@ h1 {
   font-weight: 600;
 }
 .lede { font-size: 1.25rem; color: var(--ink-soft); margin: 18px 0 0; }
-/* Serif : réservé à ce qui est prononcé. Jamais sur le chrome. */
-.spoken {
-  font-family: "New York", Iowan Old Style, Palatino, Georgia, serif;
-  font-size: 1.5rem;
-  line-height: 1.45;
-  margin: 0;
-}
 .said {
   background: var(--well);
   border-radius: 16px;
   padding: 26px 28px;
   margin: 40px 0;
-}
-.said .who {
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin: 0 0 12px;
 }
 h2 {
   font-size: 1.35rem;
