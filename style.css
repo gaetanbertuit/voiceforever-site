@@ -1,0 +1,100 @@
+:root {
+  --paper: #F4F1EB;
+  --surface: #FCFBF8;
+  --well: #EEEAE2;
+  --ink: #1A1613;
+  --ink-soft: #5D544C;
+  --copper: #A85B2B;
+  --copper-deep: #7E421D;
+  --patina: #34715A;
+  --rule: #DFD9CF;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #1A1613;
+    --surface: #25201B;
+    --well: #2F2922;
+    --ink: #F4F1EB;
+    --ink-soft: #B7ABA0;
+    --copper: #D99A66;
+    --copper-deep: #E8B183;
+    --patina: #7BB79A;
+    --rule: #3A332B;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  padding: 0 24px;
+}
+.wrap { max-width: 44rem; margin: 0 auto; }
+header { padding: 56px 0 8px; }
+.mark { display: flex; align-items: center; gap: 14px; }
+.mark svg { display: block; }
+.mark span { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+h1 {
+  font-size: clamp(2.1rem, 7vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 40px 0 0;
+  font-weight: 600;
+}
+.lede { font-size: 1.25rem; color: var(--ink-soft); margin: 18px 0 0; }
+/* Serif : réservé à ce qui est prononcé. Jamais sur le chrome. */
+.spoken {
+  font-family: "New York", Iowan Old Style, Palatino, Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  margin: 0;
+}
+.said {
+  background: var(--well);
+  border-radius: 16px;
+  padding: 26px 28px;
+  margin: 40px 0;
+}
+.said .who {
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 12px;
+}
+h2 {
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  margin: 48px 0 12px;
+  font-weight: 600;
+}
+p { margin: 14px 0; }
+ul { padding-left: 1.1rem; margin: 14px 0; }
+li { margin: 9px 0; }
+a { color: var(--copper-deep); text-underline-offset: 3px; }
+a:hover { color: var(--copper); }
+.pill {
+  display: inline-block;
+  border: 1px solid var(--patina);
+  color: var(--patina);
+  border-radius: 999px;
+  padding: 4px 13px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+footer {
+  border-top: 1px solid var(--rule);
+  margin: 64px 0 0;
+  padding: 26px 0 72px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+footer a { margin-right: 20px; }
+/* Page Confidentialité */
+.back { display: inline-block; font-weight: 600; text-decoration: none; }
+.updated { color: var(--ink-soft); margin: 6px 0 0; }
+.said .lede { margin: 0; font-size: 1.15rem; color: var(--ink); }
+main h1 { margin-top: 44px; }
+
